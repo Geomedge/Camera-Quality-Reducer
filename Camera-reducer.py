@@ -7,7 +7,7 @@ from pygrabber.dshow_graph import FilterGraph
 import pythoncom
 import webbrowser
 
-version = "V1.03.1"
+version = "V1.03.2"
 
 try:
     title_font = ("Aptos", 18, "bold")

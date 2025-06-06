@@ -12,6 +12,9 @@
 Releases are only full number versions **V1.xx** (Such as V1.3, 1.4, etc)!
 Versions like V1.03.1 **WILL NOT RECIEVE A RELEASE!**
 ## Versions:
+#### V1.03.2:
+- Added A Menu Bar
+- Added Support Links
 #### V1.03.1:
 - Fixed MinSize of the window
 ### V1.03:
