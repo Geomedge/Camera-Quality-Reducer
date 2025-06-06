@@ -9,7 +9,7 @@
 - Python (3.11+)
 ---
 ## Versions:
-#### V1.4:
+#### V1.03.1:
 - Fixed MinSize of the window
-### V1.3:
+### V1.03:
 - Finally released the program after testing.
