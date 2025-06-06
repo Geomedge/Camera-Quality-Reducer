@@ -6,7 +6,7 @@ import cv2
 from pygrabber.dshow_graph import FilterGraph
 import pythoncom
 
-version = "V1.03"
+version = "V1.03.1"
 
 try:
     title_font = ("Aptos", 18, "bold")
@@ -138,7 +138,7 @@ def stop_capture():
 
 def run_gui():
     root = tk.Tk()
-    root.minsize(500, 300)
+    root.minsize(500, 450)
     root.title("Camera Quality Reducer")
     root.config(background="#333")
 
