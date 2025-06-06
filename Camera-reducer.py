@@ -5,6 +5,7 @@ import time
 import cv2
 from pygrabber.dshow_graph import FilterGraph
 import pythoncom
+import webbrowser
 
 version = "V1.03.1"
 
@@ -136,11 +137,29 @@ def start_capture(selected_device_name, pixel_var, fps_var):
 def stop_capture():
     stop_event.set()
 
+def openlink(link):
+    link_list = ["https://github.com/Geomedge/Camera-Quality-Reducer", "https://forms.office.com/r/x7Le5d2bbE", "https://discord.gg/QN5HrTAYYs"]
+    webbrowser.open(link_list[link])
+
 def run_gui():
     root = tk.Tk()
     root.minsize(500, 450)
     root.title("Camera Quality Reducer")
     root.config(background="#333")
+
+    menubar = tk.Menu(root)
+    filemenu = tk.Menu(menubar, tearoff=0, **cred)
+    filemenu.add_command(label="Exit", command=root.quit)
+    menubar.add_cascade(label="File", menu=filemenu)
+
+    helpmenu = tk.Menu(menubar, tearoff=0, **cred)
+    helpmenu.add_command(label="Open Discord Support Page", command=lambda:[openlink(2)])
+    helpmenu.add_command(label="Open Github Page", command=lambda:[openlink(0)])
+    helpmenu.add_separator()
+    helpmenu.add_command(label="Report Bugs", command=lambda:[openlink(1)])
+    menubar.add_cascade(label="Help", menu=helpmenu)
+
+    root.config(menu=menubar)
 
     pixel = tk.IntVar(master=root, value=1080)
     fps = tk.IntVar(master=root, value=60)
