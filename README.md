@@ -1,5 +1,4 @@
 # Camera Quality Reducer
----
 ## Required Packages:
 - Open CV :  `pip install opencv-python`
 - Pywin32 :  `pip install pywin32`
