@@ -8,13 +8,12 @@ import pythoncom
 import webbrowser
 from SAUIGeo import SAU
 
-sauvernr = 1.03
-version = "V1.04.1 Beta"
-sauver = "SAU" + str(sauvernr) + " Beta Release"
+sauvernr = "1.03.5"
+version = "V1.04.1"
+sauver = "SAU" + str(sauvernr)
 release_date = "21/06/2025"
 
 SAU.check()
-SAU.verify(sauvernr)
 var = SAU.start()
 print(var)
 default = var[0]
@@ -107,7 +106,7 @@ def openlink(link):
 
 def version_info():
     ver_win = tk.Tk()
-    ver_win.minsize(250, 130)
+    ver_win.minsize(250, 100)
     ver_win.title("Version")
     ver_win.config(background="#333")
 
@@ -122,9 +121,6 @@ def version_info():
 
     l4 = tk.Label(ver_win, text=f"Release Date : {release_date}", **cred)
     l4.pack(side="top")
-
-    l5 = tk.Label(ver_win, text="This is an Beta Build!", **cred)
-    l5.pack(side="top")
 
 def run_gui():
     root = tk.Tk()
