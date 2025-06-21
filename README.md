@@ -12,6 +12,15 @@
 Releases are only full number versions **V1.xx** (Such as V1.3, 1.4, etc)!
 Versions like V1.03.1 **WILL NOT RECIEVE A RELEASE!**
 ## Versions:
+#### V1.04.1 + SAU1.03.1:
+- Added new UI system - SAU
+    - Program to Standardise App Ui (SAU)
+    - SAU is a theme management system.
+    - SAU uses .json to store a theme, which means that it's very easy to change UI elements.
+- Added new menus into menu bar
+    - Settings and Help
+- Fixed a few issues with messageboxes.
+- Added new messageboxes for theme related issues.
 #### V1.03.2:
 - Added A Menu Bar
 - Added Support Links
