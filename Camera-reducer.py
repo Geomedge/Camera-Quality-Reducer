@@ -6,7 +6,7 @@ import cv2
 from pygrabber.dshow_graph import FilterGraph
 import pythoncom
 import webbrowser
-import SAU
+from SAUIGeo import SAU
 
 sauvernr = 1.03
 version = "V1.04.1 Beta"

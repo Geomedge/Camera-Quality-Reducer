@@ -3,6 +3,7 @@
 - Open CV :  `pip install opencv-python`
 - Pywin32 :  `pip install pywin32`
 - Pygrabber : `pip install pygrabber`
+- SAUIGeo (SAU) : `pip install SAUIGeo==1.3.3`
 ---
 ## Requirements for Live Camera Output:
 - Obs Studio (Or Other Virtual Camera Software)
