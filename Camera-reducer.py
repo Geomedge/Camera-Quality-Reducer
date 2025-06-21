@@ -6,15 +6,16 @@ import cv2
 from pygrabber.dshow_graph import FilterGraph
 import pythoncom
 import webbrowser
-import theme
+import SAU
 
 sauvernr = 1.03
 version = "V1.04.1 Beta"
 sauver = "SAU" + str(sauvernr) + " Beta Release"
 release_date = "21/06/2025"
 
-theme.check()
-var = theme.start()
+SAU.check()
+SAU.verify(sauvernr)
+var = SAU.start()
 print(var)
 default = var[0]
 button = var[1]
@@ -143,13 +144,13 @@ def run_gui():
 
 #Theme Menu
     thememenu = tk.Menu(settingsmenu, tearoff=0, **cred)
-    thememenu.add_command(label="Light", command=lambda:[theme.set(0)])
-    thememenu.add_command(label="Dark", command=lambda:[theme.set(1)])
-    thememenu.add_command(label="Mellow", command=lambda:[theme.set(2)])
-    thememenu.add_command(label="Hacker", command=lambda:[theme.set(3)])
+    thememenu.add_command(label="Light", command=lambda:[SAU.set(0)])
+    thememenu.add_command(label="Dark", command=lambda:[SAU.set(1)])
+    thememenu.add_command(label="Mellow", command=lambda:[SAU.set(2)])
+    thememenu.add_command(label="Hacker", command=lambda:[SAU.set(3)])
 
     #Theme Settings
-    settingsmenu.add_cascade(label="Choose Theme", menu=thememenu)
+    settingsmenu.add_cascade(label="Choose Theme (Experimental)", menu=thememenu)
 
     #Help Menu
     helpmenu = tk.Menu(menubar, tearoff=0, **cred)

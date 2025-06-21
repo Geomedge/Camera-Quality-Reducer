@@ -106,7 +106,8 @@ def start():
     a = json.load(openfile)
     for item in a:
         c = c + 1
-    if c != 6:
+    print(c)
+    if c != 7:
         print("Error, rebuilding")
         openfile = open(path_2, "w")
         json.dump([default, button, combo, cred, scale, title, window_ui], openfile)
@@ -114,5 +115,8 @@ def start():
         a = json.load(openfile)
         openfile.close()
     return a
+
+def set(nr):
+    messagebox.showinfo("Theme Switch", "Theme switching available with newer versions!")
 
 start()

@@ -13,10 +13,11 @@ Releases are only full number versions **V1.xx** (Such as V1.3, 1.4, etc)!<br>
 Versions like V1.03.1 **WILL NOT RECIEVE A RELEASE!**<br>
 New SAU system released with V1.04.1 - Previous Versions don't require it!
 ## Versions:
-#### V1.04.1 - SAU1.03:
+#### BETA V1.04.1 - SAU1.03:
 - Added Menus in Menu Bar - Settings and Version
 - Testing Themes
 - New UI Sys SAU1.03
+- Plans to add themes
 #### V1.03.2:
 - Added A Menu Bar
 - Added Support Links
