@@ -10,18 +10,18 @@
 - Python (3.11+) - (If using Source Code)
 ---
 ## How to use
-Open the program
+### Open the program
 - Select the camera
 - Press start capture<br>
-Open OBS
+### Open OBS
 - Create a new scene
 - Create a window capture
 - Capture the python window with the camera output
 - Then stretch that across the OBS window
 - Press start Virtual Camera<br>
-Open Desired App
+### Open Desired App
 - On Camera select "OBS Virtual Camera"
-Done!
+### Done!
 ---
 ## Important:
 Releases are only full number versions **V1.xx** (Such as V1.3, 1.4, etc)!<br>
