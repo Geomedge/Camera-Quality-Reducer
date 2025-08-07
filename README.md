@@ -12,13 +12,13 @@
 ## How to use
 Open the program
 - Select the camera
-- Press start capture
+- Press start capture<br>
 Open OBS
 - Create a new scene
 - Create a window capture
 - Capture the python window with the camera output
 - Then stretch that across the OBS window
-- Press start Virtual Camera
+- Press start Virtual Camera<br>
 Open Desired App
 - On Camera select "OBS Virtual Camera"
 Done!
